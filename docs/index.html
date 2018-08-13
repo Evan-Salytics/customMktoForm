@@ -14,15 +14,18 @@
 
 	<!-- Custom Styling -->
 	<style>
-		.div{display:inline-flex;}
-
+		.con-flex{display:inline-flex;}
+		form p {
+			font-size: 1.75 rem;
+			color: #044C65;
+		}
 		form input[type=text]{
 			height: 3rem;
 		    font-size: 1.5rem;
 		    background: rgba(236,240,241,.9);
 		    border: none;
 		    padding: 0rem 1rem;
-		    color: #996060;
+		    color: #044C65;
 		    font-weight: 300;
 		    border-radius: 5px;
 		    border-bottom: 2px solid #ec7e1e;
@@ -35,19 +38,19 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-xs-12">
-				<h1>Contact us today</h1>
+				<h1 class="text-center">Contact us today</h1>
 
-				<form action="" method="post" id="contactUsForm">
+				<form class="text-center" action="" method="post" id="contactUsForm">
 					<div class="form-group row">
-						<div>
+						<div class="con-flex">
 							<span>Hi, my name is </span>
 						</div>
-						<div>
+						<div class="con-flex">
 							<label for="first-name">
 								<input type="text" id="first-name" name="first_name" placeholder="First Name">
 							</label>
 						</div>
-						<div>
+						<div class="con-flex">
 							<label for="last-name">
 								<input type="text" id="last-name" name="last_name" placeholder="Last Name">
 								<span>.</span>

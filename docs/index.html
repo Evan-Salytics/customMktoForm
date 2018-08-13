@@ -23,7 +23,10 @@
 			line-height: 50px;
 			margin: 0 10px 0 0;
 		}
-		form input[type=text]{
+		form input[type=text],
+		form input[type=email],
+		form input[type=tel],
+		form select{
 			height: 3rem;
 		    font-size: 1.375em;
 		    background: rgba(236,240,241,.9);
@@ -40,6 +43,9 @@
 		#company-name{width:165px;}
 		#type-of-company{width: 245px;}
 		#country{width: 135px;}
+		#bombora-interst{width: 350px;}
+		#email{width: 130px;}
+		#phone-number{width: 178px;}
 	</style>
 
 </head>
@@ -99,6 +105,40 @@
 						</div>
 						<div class="con-flex">
 							<span class="form-text">.</span>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="con-flex">
+							<span class="form-text">I am interested in</span>
+						</div>
+						<div class="con-flex">
+							<label for="bombora-interest">
+								<select id="bombora-interst" name="bombora_interest" placeholder="Bombora Interest">
+									<option value="Working at Bombora">Working at Bombora</option>
+									<option value="Other">Promote Bombora in the Press</option>
+									<option value="Other">Other</option>
+								</select>
+							</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="con-flex">
+							<span class="form-text">And I would like to be contacted through</span>
+						</div>
+						<div class="con-flex">
+							<label for="email">
+								<input type="email" id="email" name="email" placeholder="Email">
+							</label>
+						</div>
+						<div class="con-flex">
+							<span class="form-text">or</span>
+						</div>				
+						<div class="con-flex">
+							<label for="phone-number">
+								<input type="tel" id="phone-number" name="phone_number" placeholder="Phone Number">
+							</label>
 						</div>
 					</div>
 				</form>		

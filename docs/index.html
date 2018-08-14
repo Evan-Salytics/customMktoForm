@@ -47,6 +47,7 @@
 			margin: 0 10px 0 0 !important;
 			font-weight: 300 !important;
 			width: auto !important;
+			display: inline-block;
 		}
 		.mktoForm .mktoCheckboxList > label {
 		    line-height: 1.6em!important;
@@ -66,6 +67,14 @@
 		#bombora-interst{width: 350px;}
 		#email{width: 130px;}
 		#phone-number{width: 178px;}
+		
+		/* Media Queries */
+		@media screen (max-width: 767px){
+			.mktoLabel{
+				display: none;
+			}
+		}
+
 	</style>
 
 </head>
